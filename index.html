@@ -5,20 +5,33 @@
   <style>
 
 
- footer {
-    padding: 1em;
-    color: white;
-    background-color:#1E90FF;
-    clear: left;
-    text-align: center;
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: green;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.item1{
+  padding: 1em;
+}
+.item2{
+  padding: 1em;
+}
+.item3{
+  padding: 1em;
+}
+.item4{
+  padding: 1em;
 }
 
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-}
 </style>
 </head>
 <body>
@@ -62,10 +75,15 @@ article {
   <input type="text" placeholder="Search..">
 </div>
 </div>
-<article>
-  
-</article>
-<footer>Copyright &copy; University of the Cordilleras</footer>
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+
+
+
 
 </body>
 </html>
